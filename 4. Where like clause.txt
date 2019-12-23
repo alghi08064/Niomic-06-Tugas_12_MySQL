@@ -1,0 +1,22 @@
+MariaDB [belajar]> select `Nama dan IPK` from nilai_ipk_format;
++-------------------------+
+| Nama dan IPK            |
++-------------------------+
+| Jojon Miharja (3.82)    |
+| Christine Wijaya (3.37) |
+| Rina Kumala Sari (3.23) |
+| Riana Putria (3.18)     |
+| Rudi Permana (2.97)     |
+| Sandri Fatmala (2.49)   |
++-------------------------+
+6 rows in set (0.001 sec)
+
+MariaDB [belajar]> select * from nilai_ipk_format where `Nama dan IPK` like 'R%';
++-------------------------+
+| Nama dan IPK            |
++-------------------------+
+| Rina Kumala Sari (3.23) |
+| Riana Putria (3.18)     |
+| Rudi Permana (2.97)     |
++-------------------------+
+3 rows in set (0.004 sec)

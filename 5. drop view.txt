@@ -1,0 +1,8 @@
+MariaDB [belajar]> drop view nilai_ipk, nilai_ipk_format;
+Query OK, 0 rows affected (0.010 sec)
+
+MariaDB [belajar]> select * from nilai_ipk;
+ERROR 1146 (42S02): Table 'belajar.nilai_ipk' doesn't exist
+MariaDB [belajar]> select * from nilai_ipk_format;
+ERROR 1146 (42S02): Table 'belajar.nilai_ipk_format' doesn't exist
+MariaDB [belajar]>

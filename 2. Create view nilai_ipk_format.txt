@@ -1,0 +1,16 @@
+MariaDB [belajar]> create view nilai_ipk_format as
+    -> select concat(nama,' (',IPK,')') as 'Nama dan IPK'
+    -> from nilai_ipk order by IPK desc;
+Query OK, 0 rows affected (0.009 sec)
+
+MariaDB [belajar]> select * from nilai_ipk_format;
++-------------------------+
+| Nama dan IPK            |
++-------------------------+
+| Christine Wijaya (3.37) |
+| Rina Kumala Sari (3.23) |
+| Riana Putria (3.18)     |
+| Rudi Permana (2.97)     |
+| Sandri Fatmala (2.49)   |
++-------------------------+
+5 rows in set (0.002 sec)
